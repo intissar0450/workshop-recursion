@@ -1,0 +1,13 @@
+ALGORITHM palyndrom
+VAR
+    word:STRING
+BEGIN
+read(word)
+IF(word.length<=1)THEN
+write("this word is a palyndrom")
+END_IF
+IF (word[0]<>word[word.length-1]) THEN
+    write("this word is not a palyndrom")
+END_IF
+palyndrom(word[1,-1])
+END
